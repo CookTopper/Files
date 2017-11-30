@@ -12,7 +12,10 @@ sudo chmod +x /usr/share/applications/firefox-quantum.desktop
 cp /usr/share/applications/firefox-quantum.desktop  ~/Desktop
 
 # Install xdotool
-sudo apt-get install xdotool
+sudo apt-get install -y xdotool
+
+# Install Virtual Keyboard
+sudo apt-get install -y matchbox-keyboard
 
 # firefox command line fullscreen startup
 # firefox-quantum -url www.google.com & xdotool search --sync --onlyvisible --class "Firefox" windowactivate key F11
